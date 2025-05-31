@@ -43,3 +43,10 @@
         which gets triggered after the value is updated.
     - React groups all setState calls and considers them as one and don't remember the previous values.
         Hence to update the state multiple times, pass it as function rather than a object in the first parameter. When passed as function, first param is the previous state and second param is props.
+
+## Destructuring
+    - Destructuring is a process of extracting the values from an array or an object and assign it to 
+        distinct variable.
+
+        const { prop1, prop2 } = this.props;
+        const { state1, state2 } = this.state;
