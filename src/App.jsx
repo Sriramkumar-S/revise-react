@@ -3,12 +3,15 @@ import Functional from './Components/Functional'
 import Class from './Components/Class'
 import Counter from './Components/Counter'
 import EventHandling from './Components/EventHandling'
+import Parent from './Components/Parent'
 
 function App() {
 
   return (
     <>
-      <EventHandling />
+      <Parent />
+
+      {/* <EventHandling /> */}
 
       {/* <Counter /> */}
 

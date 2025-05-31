@@ -50,3 +50,14 @@
 
         const { prop1, prop2 } = this.props;
         const { state1, state2 } = this.state;
+
+## Passing Method as Props
+    - Methods are passed as a prop to the child component from parent, when the child component needs
+        to communicate with the parent component.
+    - Steps to implement,
+        - Add a method in Parent component
+        - Bind the method in Parent component constructor
+        - In Parent comp, add the method as a prop to child comp
+        - In Child comp, using event handlers and an arrow function call the parent method
+            and pass any parameters if neccessary.
+        
