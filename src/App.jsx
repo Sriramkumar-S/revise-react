@@ -4,12 +4,15 @@ import Class from './Components/Class'
 import Counter from './Components/Counter'
 import EventHandling from './Components/EventHandling'
 import Parent from './Components/Parent'
+import ConditionalRendering from './Components/ConditionalRendering'
 
 function App() {
 
   return (
     <>
-      <Parent />
+      <ConditionalRendering />
+
+      {/* <Parent /> */}
 
       {/* <EventHandling /> */}
 
