@@ -22,3 +22,11 @@
         this.setState({
             state: newState
         })
+    
+## Props
+    - Props are shortform for Properties.
+    - Props are properties/attributes which are passed from Parent to child components.
+    - Props are used to define and alter the UI in child components.
+    - Since props are shared from parent components, these are IMMUTABLE.
+    - Hence props are used to display only static content. 
+    - To display dynamic data in UI, STATE came into picture
