@@ -7,12 +7,15 @@ import Parent from './Components/Parent'
 import ConditionalRendering from './Components/ConditionalRendering'
 import ListRendering from './Components/ListRendering'
 import Styling from './Components/Styling'
+import FormHandling from './Components/FormHandling'
 
 function App() {
 
   return (
     <>
-      <Styling />
+      <FormHandling />
+
+      {/* <Styling /> */}
 
       {/* <ListRendering /> */}
 
