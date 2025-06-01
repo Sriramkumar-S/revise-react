@@ -60,4 +60,16 @@
         - In Parent comp, add the method as a prop to child comp
         - In Child comp, using event handlers and an arrow function call the parent method
             and pass any parameters if neccessary.
-        
+
+## Styling using CSS
+    - First approach is by using seperate stylesheet file (styles.css) and importing the styles
+        - className: 'error', className: `${errorClass} error`
+    - Inline styles mentioned in the same file using styles tag
+        - style={{ color: 'green', fontSize: '24px' }}
+    - Using module.css file ( styles.module.css )
+        - import style from '../styles.module.css'
+        - <h1 className={style.error}>Error</h1>
+        - using this file, the style rules are specific to the component and it cannot be inherited
+            by their child component, unlike normal styles.css file
+        - when DOM is generated, these tags where module styles are used will have a unique text
+            appended to the class name to make them unique and accessible only to those component tags

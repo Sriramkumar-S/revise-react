@@ -6,12 +6,15 @@ import EventHandling from './Components/EventHandling'
 import Parent from './Components/Parent'
 import ConditionalRendering from './Components/ConditionalRendering'
 import ListRendering from './Components/ListRendering'
+import Styling from './Components/Styling'
 
 function App() {
 
   return (
     <>
-      <ListRendering />
+      <Styling />
+
+      {/* <ListRendering /> */}
 
       {/* <ConditionalRendering /> */}
 
