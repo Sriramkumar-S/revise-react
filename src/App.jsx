@@ -8,12 +8,15 @@ import ConditionalRendering from './Components/ConditionalRendering'
 import ListRendering from './Components/ListRendering'
 import Styling from './Components/Styling'
 import FormHandling from './Components/FormHandling'
+import LifecycleA from './Components/LifecycleA'
 
 function App() {
 
   return (
     <>
-      <FormHandling />
+      <LifecycleA />
+
+      {/* <FormHandling /> */}
 
       {/* <Styling /> */}
 

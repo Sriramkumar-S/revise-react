@@ -73,3 +73,11 @@
             by their child component, unlike normal styles.css file
         - when DOM is generated, these tags where module styles are used will have a unique text
             appended to the class name to make them unique and accessible only to those component tags
+
+## Class component Lifecycle method
+### Mounting lifecycle
+    - constructor(props)
+    - getDerivedStateFromProps(state, props)
+    - render()
+    - componentDidMount()
+
