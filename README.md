@@ -77,13 +77,20 @@
 ## Class component Lifecycle method
 ### Mounting lifecycle
     - constructor(props)
-    - getDerivedStateFromProps(state, props)
+    - static getDerivedStateFromProps(state, props)
     - render()
     - componentDidMount()
 
 ### Updating Lifecycle
-    - getDerivedStateFromProps()
+    - static getDerivedStateFromProps(state, props)
     - shouldComponentUpdate()
     - render()
     - getSnapshotBeforeUpdate(prevProps, prevState)
     - componentDidUpdate()
+
+### Unmounting Lifecycle
+    - componentWillUnmount()
+
+### Error handling Lifecycle
+    - static getDerivedStateFromError(error)
+    - componentDidCatch(error, info)
