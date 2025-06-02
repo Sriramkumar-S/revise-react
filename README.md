@@ -81,3 +81,9 @@
     - render()
     - componentDidMount()
 
+### Updating Lifecycle
+    - getDerivedStateFromProps()
+    - shouldComponentUpdate()
+    - render()
+    - getSnapshotBeforeUpdate(prevProps, prevState)
+    - componentDidUpdate()
