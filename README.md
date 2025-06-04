@@ -103,3 +103,17 @@
     - PURE components are those which will verify the new state or prop with its old value and only if there 
         is a difference it rerenders the DOM, thereby imporving perfomance.
     - This is for CLASS components
+    - Need to import the component from PureComponent
+        import React, { PureComponent } from 'react'
+
+## Memo
+    - React memo is analogous to Pure component but for Functional Components
+    - While exporting the component need to pass it as parameter to React.memo
+        export default React.memo(MemoComponent)
+
+## Refs
+    - React Refs are used to store and access either the html elements or components.
+    - Unlike State or porps, updating refs won't rerender the DOM
+    - Refs can be created using 2 ways
+        - React.CreateRef()
+        - Callback Ref

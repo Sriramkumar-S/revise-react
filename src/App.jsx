@@ -10,12 +10,16 @@ import Styling from './Components/Styling'
 import FormHandling from './Components/FormHandling'
 import LifecycleA from './Components/LifecycleA'
 import ParentComponent from './Components/ParentComponents'
+import RefsDemo from './Components/Refs_Demo/RefsDemo'
 
 function App() {
 
   return (
     <>
-      <ParentComponent />
+
+      <RefsDemo />
+
+      {/* <ParentComponent /> */}
 
       {/* <LifecycleA /> */}
 
