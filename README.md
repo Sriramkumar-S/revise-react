@@ -117,3 +117,4 @@
     - Refs can be created using 2 ways
         - React.CreateRef()
         - Callback Ref
+    - Refs are exclusively used for CLASS components

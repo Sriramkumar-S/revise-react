@@ -11,13 +11,14 @@ import FormHandling from './Components/FormHandling'
 import LifecycleA from './Components/LifecycleA'
 import ParentComponent from './Components/ParentComponents'
 import RefsDemo from './Components/Refs_Demo/RefsDemo'
+import ParentRef from './Components/Refs_Demo/ParentRef'
 
 function App() {
 
   return (
     <>
-
-      <RefsDemo />
+      <ParentRef />
+      {/* <RefsDemo /> */}
 
       {/* <ParentComponent /> */}
 
