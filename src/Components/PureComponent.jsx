@@ -5,7 +5,7 @@ class PureComponents extends PureComponent {
     console.log('Pure component Rendered')
     return (
       <>
-        <div>Pure component</div>
+        <div>Pure component {this.props.name}</div>
       </>
     )
   }

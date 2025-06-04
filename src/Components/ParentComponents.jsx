@@ -3,27 +3,31 @@ import NormalComponents from './NormalComponents'
 import PureComponents from './PureComponent'
 
 class ParentComponent extends Component {
-    constructor(props) {
-        super(props)
-      
-        this.state = {
-           name: 'Tony stark'
-        }
-      }
-  
-    render() {    
-    console.log('Parent component Rendered')
-    setInterval( () => {
-        this.setState({
-            name: 'Tony stark'
-        })
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      name: 'Tony stark'
+    }
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        name: 'Tony stark'
+      })
     }, 2000)
+  }
+
+  render() {
+    console.log('**********************Parent component Rendered**********************')
+
     return (
       <>
         <div>Parent component</div>
-        <NormalComponents name={this.state.name}/>
-        <PureComponents name={this.state.name}/>
-        
+        <NormalComponents name={this.state.name} />
+        <PureComponents name={this.state.name} />
+
       </>
     )
   }

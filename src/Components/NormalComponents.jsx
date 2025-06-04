@@ -5,7 +5,7 @@ class NormalComponents extends Component {
     console.log('Normal component Rendered')
     return (
       <>
-        <div>Normal Component</div>
+        <div>Normal Component {this.props.name}</div>
       </>
     )
   }
