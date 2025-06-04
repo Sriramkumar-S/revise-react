@@ -118,3 +118,10 @@
         - React.CreateRef()
         - Callback Ref
     - Refs are exclusively used for CLASS components
+
+### Forwarding Refs
+    - Forwarding Refs is used to directly gain access to the native elements in child elements,
+        rather than referencing the child comp and using a handler inside child comp to access the native 
+        element
+    - When a ref is created using React.createRef() method then the ref is automatically passed as 
+        second argument to the child comp, while the first argument being props

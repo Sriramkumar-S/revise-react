@@ -12,12 +12,14 @@ import LifecycleA from './Components/LifecycleA'
 import ParentComponent from './Components/ParentComponents'
 import RefsDemo from './Components/Refs_Demo/RefsDemo'
 import ParentRef from './Components/Refs_Demo/ParentRef'
+import ParentFwdRef from './Components/Refs_Demo/ParentFwdRef'
 
 function App() {
 
   return (
     <>
-      <ParentRef />
+      <ParentFwdRef />
+      {/* <ParentRef /> */}
       {/* <RefsDemo /> */}
 
       {/* <ParentComponent /> */}
