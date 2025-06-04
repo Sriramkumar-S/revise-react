@@ -94,3 +94,12 @@
 ### Error handling Lifecycle
     - static getDerivedStateFromError(error)
     - componentDidCatch(error, info)
+
+## Pure components
+    - In React the components are rendered when there is change in either Prop or State value,
+    - When value is set using setState or new props are received from parent component react rerenders the DOM
+    - But if the same value is being set in state or sent through props, normal react component rerenders
+        the DOM even though there is no change in value. This affects performance of applications.
+    - PURE components are those which will verify the new state or prop with its old value and only if there 
+        is a difference it rerenders the DOM, thereby imporving perfomance.
+    - This is for CLASS components

@@ -9,12 +9,15 @@ import ListRendering from './Components/ListRendering'
 import Styling from './Components/Styling'
 import FormHandling from './Components/FormHandling'
 import LifecycleA from './Components/LifecycleA'
+import ParentComponent from './Components/ParentComponents'
 
 function App() {
 
   return (
     <>
-      <LifecycleA />
+      <ParentComponent />
+
+      {/* <LifecycleA /> */}
 
       {/* <FormHandling /> */}
 
