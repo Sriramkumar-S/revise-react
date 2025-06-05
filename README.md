@@ -125,3 +125,9 @@
         element
     - When a ref is created using React.createRef() method then the ref is automatically passed as 
         second argument to the child comp, while the first argument being props
+
+## Error Boundary
+    - A class component that implements either *getDerivedStateFromError* or *componentDidCatch* lifecycle 
+        method becomes an Error boundary
+    - *getDerivedStateFromError* is used to render an fallback UI in case of error
+    - *componentDidCatch* is used for error logging

@@ -13,12 +13,23 @@ import ParentComponent from './Components/ParentComponents'
 import RefsDemo from './Components/Refs_Demo/RefsDemo'
 import ParentRef from './Components/Refs_Demo/ParentRef'
 import ParentFwdRef from './Components/Refs_Demo/ParentFwdRef'
+import ErrorBoundary from './Components/ErrorBoundary_Demo/ErrorBoundary'
+import Heros from './Components/ErrorBoundary_Demo/Heros'
 
 function App() {
 
   return (
     <>
-      <ParentFwdRef />
+      <ErrorBoundary>
+        <Heros heroName='Iron Man' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Heros heroName='Spider Man' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Heros heroName='Thanos' />
+      </ErrorBoundary>
+      {/* <ParentFwdRef /> */}
       {/* <ParentRef /> */}
       {/* <RefsDemo /> */}
 
