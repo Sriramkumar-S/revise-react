@@ -127,7 +127,18 @@
         second argument to the child comp, while the first argument being props
 
 ## Error Boundary
-    - A class component that implements either *getDerivedStateFromError* or *componentDidCatch* lifecycle 
+    - A class component that implements either **getDerivedStateFromError** or **componentDidCatch** lifecycle 
         method becomes an Error boundary
-    - *getDerivedStateFromError* is used to render an fallback UI in case of error
-    - *componentDidCatch* is used for error logging
+    - **getDerivedStateFromError** is used to render an fallback UI in case of error
+    - **componentDidCatch** is used for error logging
+
+## Higher Order Components (HOC)
+    - HOC is a pattern where a component is passed as an argument to a function and that function returns 
+        the enhanced component
+    - HOC is used to share common functionalities between components without having to duplicate code
+    - class WithCounter extends React.Component {
+            render() {
+                return <WrappedComponent >
+            }
+        }
+        return WithCounter
