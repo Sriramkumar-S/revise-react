@@ -146,3 +146,21 @@
 ## Render Props
     - Render props is also a method for sharing common functionalities between different components
     - This is a process of sharing a function as a prop to determine what to be rendered
+
+## Context API
+    - When there is a neccessity to communicate between components and share details to deeply nested 
+        components, we have to use props to drill the value deep to that component.
+    - To overcome this, context APIs are introduced where it makes it easy to share the details
+        - Create a **UserContext** with default value and create a **UserProvider and UserConsumer** from it
+        - Add the **UserProvider** tag in a component in such a way that all its decendent components can 
+            make use of it. Using **value** property send the value to be shared
+        - In the component where the value needs to be retrived, inside the render method return a function
+            which returns the component code. These are enclosed within the **UserConsumer** tag
+            **<UserConsumer>
+                {(propName) => {
+                    return ( <div>Hello {propName}</div> )
+                }}
+            </UserConsumer>**
+        - **contextType** can also be used to, but it has 2 disadvantages
+            - It is specific to **class** components
+            - Cannot send multiple context

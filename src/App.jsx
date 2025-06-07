@@ -20,12 +20,18 @@ import HoverHOC from './Components/HigherOrderComponents/HoverHOC'
 import RenderProps from './Components/RenderProps_Demo/RenderProps'
 import CounterRenderProps from './Components/RenderProps_Demo/CounterRenderProps'
 import HoverRenderProps from './Components/RenderProps_Demo/HoverRenderProps'
+import ComponentA from './Components/ContextApi_Demo/ComponentA'
+import { UserProvider } from './Components/ContextApi_Demo/UserContext'
 
 function App() {
 
   return (
     <>
-      <RenderProps>
+      <UserProvider value='Iron Man'>
+        <ComponentA />
+      </UserProvider>
+
+      {/* <RenderProps>
         {(count, increamentCount) => {
           console.log(count, increamentCount)
           return <CounterRenderProps count={count} increamentCount={increamentCount} />
@@ -35,7 +41,7 @@ function App() {
         {(count, increamentCount) => {
           return <HoverRenderProps count={count} increamentCount={increamentCount} />
         }}
-      </RenderProps>
+      </RenderProps> */}
       {/* <RenderProps render={(count, increamentCount) => {
         console.log(count, increamentCount)
         return <CounterRenderProps count={count} increamentCount={increamentCount}/>
