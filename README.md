@@ -142,3 +142,7 @@
             }
         }
         return WithCounter
+
+## Render Props
+    - Render props is also a method for sharing common functionalities between different components
+    - This is a process of sharing a function as a prop to determine what to be rendered

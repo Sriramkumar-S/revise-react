@@ -17,13 +17,35 @@ import ErrorBoundary from './Components/ErrorBoundary_Demo/ErrorBoundary'
 import Heros from './Components/ErrorBoundary_Demo/Heros'
 import CounterHOC from './Components/HigherOrderComponents/CounterHOC'
 import HoverHOC from './Components/HigherOrderComponents/HoverHOC'
+import RenderProps from './Components/RenderProps_Demo/RenderProps'
+import CounterRenderProps from './Components/RenderProps_Demo/CounterRenderProps'
+import HoverRenderProps from './Components/RenderProps_Demo/HoverRenderProps'
 
 function App() {
 
   return (
     <>
-      <CounterHOC name='Sriram'/>
-      <HoverHOC />
+      <RenderProps>
+        {(count, increamentCount) => {
+          console.log(count, increamentCount)
+          return <CounterRenderProps count={count} increamentCount={increamentCount} />
+        }}
+      </RenderProps>
+      <RenderProps>
+        {(count, increamentCount) => {
+          return <HoverRenderProps count={count} increamentCount={increamentCount} />
+        }}
+      </RenderProps>
+      {/* <RenderProps render={(count, increamentCount) => {
+        console.log(count, increamentCount)
+        return <CounterRenderProps count={count} increamentCount={increamentCount}/>
+      }}/>
+      <RenderProps render={(count, increamentCount) => {
+        return <HoverRenderProps count={count} increamentCount={increamentCount}/>
+      }}/> */}
+
+      {/* <CounterHOC name='Sriram'/>
+      <HoverHOC /> */}
 
       {/* <ErrorBoundary>
         <Heros heroName='Iron Man' />
