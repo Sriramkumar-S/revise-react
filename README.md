@@ -164,3 +164,22 @@
         - **contextType** can also be used to, but it has 2 disadvantages
             - It is specific to **class** components
             - Cannot send multiple context
+
+## Hooks
+    - Hooks are released in React 16 which allows to use react features without using class
+    - Hooks wont work inside classes
+    - Allows to reuse stateful logic
+    - Allows to directly access API
+
+### Rules of Hooks
+    - Only call hooks at the Top level --> Dont call inside loops, conditions or nested functions
+    - Only call hooks from within react funcions --> Not from insided regular JS functions
+
+## useState Hook
+    - way to implement **State** inside **Functional component**
+    - In class comp., state is always an object but it is not the case in functional comp.
+    - When dealing with arrays or objects always spread the state variable and then update.
+        
+        const [state, setState] = useState(initialValue)
+
+        {() => setState(prevState => prevState + newValue)}

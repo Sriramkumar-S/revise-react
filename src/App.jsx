@@ -22,14 +22,18 @@ import CounterRenderProps from './Components/RenderProps_Demo/CounterRenderProps
 import HoverRenderProps from './Components/RenderProps_Demo/HoverRenderProps'
 import ComponentA from './Components/ContextApi_Demo/ComponentA'
 import { UserProvider } from './Components/ContextApi_Demo/UserContext'
+import Hook_useState from './Hooks_Demo/Components/Hook_useState'
 
 function App() {
 
   return (
     <>
-      <UserProvider value='Iron Man'>
+
+      <Hook_useState />
+
+      {/* <UserProvider value='Iron Man'>
         <ComponentA />
-      </UserProvider>
+      </UserProvider> */}
 
       {/* <RenderProps>
         {(count, increamentCount) => {
