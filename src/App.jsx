@@ -25,13 +25,15 @@ import { UserProvider } from './Components/ContextApi_Demo/UserContext'
 import Hook_useState from './Hooks_Demo/Components/Hook_useState'
 import Hook_useEffect from './Hooks_Demo/Components/Hook_useEffect'
 import Hook_useEffect_TickCounter from './Hooks_Demo/Components/Hook_useEffect_TickCounter'
+import Hook_useEffect_FetchingData from './Hooks_Demo/Components/Hook_useEffect_FetchingData'
 
 function App() {
 
   return (
     <>
 
-      <Hook_useEffect_TickCounter />
+      <Hook_useEffect_FetchingData />
+      {/* <Hook_useEffect_TickCounter /> */}
       {/* <Hook_useEffect /> */}
       {/* <Hook_useState /> */}
 
