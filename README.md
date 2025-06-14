@@ -183,3 +183,27 @@
         const [state, setState] = useState(initialValue)
 
         {() => setState(prevState => prevState + newValue)}
+
+## useEffect Hook
+    - useEffect hook is way to perform side effect in functional components
+    - It replaces the work done by **componentDidMount**, **componentDidUpdate** and      **componentWillUnmount**   in class components
+    - useEffect(() => {
+        <!-- code to be executed either during mounting or updating phase -->
+
+        return () => {
+            <!-- code to be executed during unmounting phase -->
+        }
+    }, [<dependencyArray>])
+
+    - useEffect is a function which takes 2 parameters. 
+        First is a function which is used to execute code during mounting and unmounting phase
+        Second is a dependency array
+    - Dependency array is used to let react know to keep track of state or props and trigger a rerender
+        when either of the value changes
+        - When dependency array is not added, react rerender the page continuously thereby affecting performance
+        - When an empty [] is given, then the code in useEffect block will be executed only during
+            mounting phase
+        - When the [state, prop] mentioned, then the useEffect triggers rerender during mounting phase
+            and also during change in value of any of the state or props mentioned in the array
+    - Unmounting phase code can be written inside an arrow function which will be returned inside the
+        useEffect code block

@@ -23,13 +23,17 @@ import HoverRenderProps from './Components/RenderProps_Demo/HoverRenderProps'
 import ComponentA from './Components/ContextApi_Demo/ComponentA'
 import { UserProvider } from './Components/ContextApi_Demo/UserContext'
 import Hook_useState from './Hooks_Demo/Components/Hook_useState'
+import Hook_useEffect from './Hooks_Demo/Components/Hook_useEffect'
+import Hook_useEffect_TickCounter from './Hooks_Demo/Components/Hook_useEffect_TickCounter'
 
 function App() {
 
   return (
     <>
 
-      <Hook_useState />
+      <Hook_useEffect_TickCounter />
+      {/* <Hook_useEffect /> */}
+      {/* <Hook_useState /> */}
 
       {/* <UserProvider value='Iron Man'>
         <ComponentA />
