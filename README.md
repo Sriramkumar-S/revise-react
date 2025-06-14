@@ -207,3 +207,16 @@
             and also during change in value of any of the state or props mentioned in the array
     - Unmounting phase code can be written inside an arrow function which will be returned inside the
         useEffect code block
+
+## useContext Hook
+    - Context API is used to share common functionalities between different components, wherein 
+        passing props manually to multiple levels is a problem since it rerenders the components 
+    - **useContext** hook is used to replicate what context API did for class component in functional
+        components
+    - useContext hook has a three step process
+        1. export const UserContext = createContext(<defaultValue>);+
+        2. <UserContext value={valueTobePassed}>
+                <Components>
+            </UserContext>
+        3. Inside the component where the value needs to be used
+            const user = useContext(UserContext);
