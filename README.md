@@ -238,3 +238,27 @@
         const [state, dispatchFn] = useReducer(reducerFn, initialState)
         
         dispatchFn({ type: 'action_1' }) **
+
+## useState vs useReducer
+
+    Scenario                            useState                                useReducer
+
+1. Type of State                    Numbers, string, boolean                Arrays and objects
+
+2. Number of state transitions      Lower no of setState to be              More no of repetion of updates to  
+                                    implemented (one or two)                to be done (like more than 5)
+
+3. Related state transition         When related state variables needs      useReducer is recommended when
+                                    to be updated based one scenario        there are multiple variables which
+                                    like either success or failure,         are related and needs to be 
+                                    then useState is not recommended        updated based on particular
+                                                                            scenario
+    
+4. Business logic                   When updating the value doesn't         When complex computations or 
+                                    involve any complex computations        business logics needs to be 
+                                                                            implemented before updating
+
+5. Local vs Global                  useState is used only for               useReducer is used for maintaining
+                                    maitaining Local state                  Global state, it is sometimes
+                                                                            combined with useContext hook to
+                                                                            implement this.
