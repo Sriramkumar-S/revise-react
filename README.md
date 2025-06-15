@@ -220,3 +220,21 @@
             </UserContext>
         3. Inside the component where the value needs to be used
             const user = useContext(UserContext);
+
+## useReducer Hook
+    - **useReducer** is a hook used for state management in React and it is related to **reducer** function
+    - syntax
+        **const initialState = {
+            state_1: <initialValue>
+        }
+
+        const reducerFn => (currentState, action) {
+            switch(action.type) {
+                case 'action_1':
+                    return newState
+            }
+        }
+
+        const [state, dispatchFn] = useReducer(reducerFn, initialState)
+        
+        dispatchFn({ type: 'action_1' }) **

@@ -27,13 +27,17 @@ import Hook_useEffect from './Hooks_Demo/Components/Hook_useEffect'
 import Hook_useEffect_TickCounter from './Hooks_Demo/Components/Hook_useEffect_TickCounter'
 import Hook_useEffect_FetchingData from './Hooks_Demo/Components/Hook_useEffect_FetchingData'
 import ClassContext from './Hooks_Demo/Components/Context_API_Demo/ClassContext'
+import UseReducerCounter from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounter'
+import UseReducerCounterTwo from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterTwo'
+import UseReducerCounterThree from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterThree'
 
 function App() {
 
   return (
     <>
 
-      <ClassContext />
+      <UseReducerCounterThree />
+      {/* <ClassContext /> */}
       {/* <Hook_useEffect_FetchingData /> */}
       {/* <Hook_useEffect_TickCounter /> */}
       {/* <Hook_useEffect /> */}
