@@ -30,13 +30,15 @@ import ClassContext from './Hooks_Demo/Components/Context_API_Demo/ClassContext'
 import UseReducerCounter from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounter'
 import UseReducerCounterTwo from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterTwo'
 import UseReducerCounterThree from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterThree'
+import UseReducerWithContext from './Hooks_Demo/Components/UseReducer_Demo/UseReducerWithContext'
 
 function App() {
 
   return (
     <>
 
-      <UseReducerCounterThree />
+      <UseReducerWithContext />
+      {/* <UseReducerCounterThree /> */}
       {/* <ClassContext /> */}
       {/* <Hook_useEffect_FetchingData /> */}
       {/* <Hook_useEffect_TickCounter /> */}
