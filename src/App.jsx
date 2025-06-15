@@ -31,13 +31,15 @@ import UseReducerCounter from './Hooks_Demo/Components/UseReducer_Demo/UseReduce
 import UseReducerCounterTwo from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterTwo'
 import UseReducerCounterThree from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterThree'
 import UseReducerWithContext from './Hooks_Demo/Components/UseReducer_Demo/UseReducerWithContext'
+import UseReducerFetchData from './Hooks_Demo/Components/UseReducer_Demo/UseReducerFetchData'
 
 function App() {
 
   return (
     <>
 
-      <UseReducerWithContext />
+      <UseReducerFetchData />
+      {/* <UseReducerWithContext /> */}
       {/* <UseReducerCounterThree /> */}
       {/* <ClassContext /> */}
       {/* <Hook_useEffect_FetchingData /> */}
