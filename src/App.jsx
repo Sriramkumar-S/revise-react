@@ -32,13 +32,15 @@ import UseReducerCounterTwo from './Hooks_Demo/Components/UseReducer_Demo/UseRed
 import UseReducerCounterThree from './Hooks_Demo/Components/UseReducer_Demo/UseReducerCounterThree'
 import UseReducerWithContext from './Hooks_Demo/Components/UseReducer_Demo/UseReducerWithContext'
 import UseReducerFetchData from './Hooks_Demo/Components/UseReducer_Demo/UseReducerFetchData'
+import UseCallback from './Hooks_Demo/Components/UseCallback_Demo/UseCallback'
 
 function App() {
 
   return (
     <>
 
-      <UseReducerFetchData />
+      <UseCallback />
+      {/* <UseReducerFetchData /> */}
       {/* <UseReducerWithContext /> */}
       {/* <UseReducerCounterThree /> */}
       {/* <ClassContext /> */}

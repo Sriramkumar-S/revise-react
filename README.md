@@ -241,24 +241,24 @@
 
 ## useState vs useReducer
 
-    Scenario                            useState                                useReducer
+### useState
+1. Type of State - Numbers, string, boolean
+2. Number of state transitions - Lower no of setState to be implemented (one or two)
+3. Related state transition - When related state variables needs to be updated based one scenario like either success or failure, then useState is not recommended
+4. Business logic - When updating the value doesn't involve any complex computations
+5. Local vs Global - useState is used only for maitaining Local state
 
-1. Type of State                    Numbers, string, boolean                Arrays and objects
 
-2. Number of state transitions      Lower no of setState to be              More no of repetion of updates to  
-                                    implemented (one or two)                to be done (like more than 5)
+### useReducer
+1. Type of State - Arrays and objects
+2. Number of state transitions - More no of repetion of updates to be done (like more than 5)
+3. Related state transition - useReducer is recommended when there are multiple variables which are related and needs to be updated based on particular scenario
+4. Business logic - When complex computations or business logics needs to be implemented before updating
+5. Local vs Global - useReducer is used for maintaining Global state, it is sometimes combined with useContext hook to implement this.
 
-3. Related state transition         When related state variables needs      useReducer is recommended when
-                                    to be updated based one scenario        there are multiple variables which
-                                    like either success or failure,         are related and needs to be 
-                                    then useState is not recommended        updated based on particular
-                                                                            scenario
-    
-4. Business logic                   When updating the value doesn't         When complex computations or 
-                                    involve any complex computations        business logics needs to be 
-                                                                            implemented before updating
-
-5. Local vs Global                  useState is used only for               useReducer is used for maintaining
-                                    maitaining Local state                  Global state, it is sometimes
-                                                                            combined with useContext hook to
-                                                                            implement this.
+## useCallback Hook
+    - One of the performance optimization techniques used in react is using the useCallback Hook.
+    - It is used when passing a callback function to a performance optimized component where referential equality is implemented. 
+    - It memoizes the callback function which is passed as prop to the child components.                                                                 
+    - syntax
+        const funcName = useCallback(() => {}, [dependencies])
