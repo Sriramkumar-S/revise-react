@@ -272,3 +272,16 @@
         const exampleRef = useRef(<initialValue>)
 
         exampleRef.current
+
+## useMemo Hook
+    - useMemo Hook is also one of the performance optimization technique.
+    - useMemo hook caches the return value of the function which involves complex calculations or
+        computations which takes up a lot of time to execute.
+    - It has a dependency array which specifies on update of which value should the calucations be 
+        done again and should not share the cached value.
+    - syntax
+        const functionName = useMemo(() => {
+            <complex calculations>
+        }, [<dependency array>])
+
+        instead of calling function using <functionName()> just pass the reference <functionName>
