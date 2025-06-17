@@ -262,3 +262,13 @@
     - It memoizes the callback function which is passed as prop to the child components.                                                                 
     - syntax
         const funcName = useCallback(() => {}, [dependencies])
+
+## useRef Hook
+    - useRef hook is used to store a mutable value or get access to a DOM element directly
+        in a functional component.
+    - userRef values can be persisted across DOM rerenders.
+    - Change in useRef values doesn't cause rerender.
+    - syntax
+        const exampleRef = useRef(<initialValue>)
+
+        exampleRef.current
