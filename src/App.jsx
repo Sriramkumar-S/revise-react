@@ -35,13 +35,15 @@ import UseReducerFetchData from './Hooks_Demo/Components/UseReducer_Demo/UseRedu
 import UseCallback from './Hooks_Demo/Components/UseCallback_Demo/UseCallback'
 import UseRefDemo from './Hooks_Demo/Components/UseRef_Demo/useRefDemo'
 import UseMemoDemo from './Hooks_Demo/Components/UseMemo_Demo/UseMemoDemo'
+import UseStateRender from './Render_Demo/Components/UseStateRender/UseStateRender'
 
 function App() {
 
   return (
     <>
 
-      <UseMemoDemo />
+      <UseStateRender />
+      {/* <UseMemoDemo /> */}
       {/* <UseRefDemo /> */}
       {/* <UseCallback /> */}
       {/* <UseReducerFetchData /> */}

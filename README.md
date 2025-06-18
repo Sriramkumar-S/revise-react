@@ -285,3 +285,26 @@
         }, [<dependency array>])
 
         instead of calling function using <functionName()> just pass the reference <functionName>
+
+## Rendering in React
+    - There 2 phases in react for a component to be visible in DOM
+        1. Rendering phase
+            - All the component starting from root (App) to the leaf component are listed
+            - React flags the components where there is a change in value triggered
+            - React then uses the createElement() method to react elements which are JS objects from JSX
+            - React reconciliation then happens where the previous rendered elements are compared
+                with newly rendered elements
+            - Then the changes are given to committing phase
+        2. Committing phase
+            - The changes are then committed to the DOM
+
+    - Commit phase is usually very fast, only the rendering phase is slow
+
+### useState and Render
+    - The setter function in useState will cause the component to rerender
+    - Only exception when it doesn't rerender is when the value is set to same value
+    - There are two cases to it,
+        1. Same value after initial render --> Component will not rerender
+        2. Same value after rerender --> Component will rerender once and then stops from rerendering again
+
+    
