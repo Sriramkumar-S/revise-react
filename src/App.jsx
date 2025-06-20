@@ -36,13 +36,15 @@ import UseCallback from './Hooks_Demo/Components/UseCallback_Demo/UseCallback'
 import UseRefDemo from './Hooks_Demo/Components/UseRef_Demo/useRefDemo'
 import UseMemoDemo from './Hooks_Demo/Components/UseMemo_Demo/UseMemoDemo'
 import UseStateRender from './Render_Demo/Components/UseStateRender/UseStateRender'
+import UseReducerRender from './Render_Demo/Components/UseReducerRender/UseReducerRender'
 
 function App() {
 
   return (
     <>
 
-      <UseStateRender />
+      <UseReducerRender />
+      {/* <UseStateRender /> */}
       {/* <UseMemoDemo /> */}
       {/* <UseRefDemo /> */}
       {/* <UseCallback /> */}

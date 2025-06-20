@@ -300,8 +300,8 @@
 
     - Commit phase is usually very fast, only the rendering phase is slow
 
-### useState and Render
-    - The setter function in useState will cause the component to rerender
+### useState/useReducer and Render
+    - The setter/dispatch function in useState/useReducer will cause the component to rerender
     - Only exception when it doesn't rerender is when the value is set to same value
     - There are two cases to it,
         1. Same value after initial render --> Component will not rerender
