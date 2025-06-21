@@ -37,13 +37,17 @@ import UseRefDemo from './Hooks_Demo/Components/UseRef_Demo/useRefDemo'
 import UseMemoDemo from './Hooks_Demo/Components/UseMemo_Demo/UseMemoDemo'
 import UseStateRender from './Render_Demo/Components/UseStateRender/UseStateRender'
 import UseReducerRender from './Render_Demo/Components/UseReducerRender/UseReducerRender'
+import ObjectImmutability from './Render_Demo/Components/State Immutability/ObjectImmutability'
+import ArrayImmutability from './Render_Demo/Components/State Immutability/ArrayImmutability'
 
 function App() {
 
   return (
     <>
 
-      <UseReducerRender />
+      <ArrayImmutability />
+      <ObjectImmutability />
+      {/* <UseReducerRender /> */}
       {/* <UseStateRender /> */}
       {/* <UseMemoDemo /> */}
       {/* <UseRefDemo /> */}

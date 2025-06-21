@@ -309,3 +309,8 @@
     - After React 18, the exceptions doesn't work out. It rerenders everytime the dispatch function is 
         executed eventhough the state is set to same value.
     
+## State Immuatibility
+    - While using useState and useReducer using Arrays or Objects, mutating the values doesn't cause
+        the page to rerender.
+    - This is because the useState and useReducer will trigger rerenders only when they return 
+        new reference to those variable. So mutating the values wont cause rerenders
