@@ -306,5 +306,6 @@
     - There are two cases to it,
         1. Same value after initial render --> Component will not rerender
         2. Same value after rerender --> Component will rerender once and then stops from rerendering again
-
+    - After React 18, the exceptions doesn't work out. It rerenders everytime the dispatch function is 
+        executed eventhough the state is set to same value.
     
