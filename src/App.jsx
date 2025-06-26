@@ -39,14 +39,18 @@ import UseStateRender from './Render_Demo/Components/UseStateRender/UseStateRend
 import UseReducerRender from './Render_Demo/Components/UseReducerRender/UseReducerRender'
 import ObjectImmutability from './Render_Demo/Components/State Immutability/ObjectImmutability'
 import ArrayImmutability from './Render_Demo/Components/State Immutability/ArrayImmutability'
+import ParentRender from './Render_Demo/Components/ParentAndChildRenders/ParentRender'
+import ChildRender from './Render_Demo/Components/ParentAndChildRenders/ChildRender'
+import GrandParentRender from './Render_Demo/Components/ParentAndChildRenders/GrandParentRender'
 
 function App() {
 
   return (
     <>
-
-      <ArrayImmutability />
-      <ObjectImmutability />
+    
+      <GrandParentRender />
+      {/* <ArrayImmutability />
+      <ObjectImmutability /> */}
       {/* <UseReducerRender /> */}
       {/* <UseStateRender /> */}
       {/* <UseMemoDemo /> */}

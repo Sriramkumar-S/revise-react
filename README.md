@@ -314,3 +314,19 @@
         the page to rerender.
     - This is because the useState and useReducer will trigger rerenders only when they return 
         new reference to those variable. So mutating the values wont cause rerenders
+
+## Parent and Child Renders
+    - When a parent component gets rerendered, all of its child components also gets rerendered.
+    - Even though child component is rerendered it doesn't goes till commit phase.
+    - When there is a state change in parent component, the nested component gets rerendered. 
+        But these will be unneccessary rerenders if there is no change in child component since nothing is 
+        passed as props to affect the child
+    - In these cases to get rid of these unneccessary rerenders, instead of nesting the child components
+        these can be passed as children prop in the parent component.
+    - Since a component can update only its state and not the props, it signifies the child component cannot
+        be rendered by state change in parent. Hence not rendering the child component.
+    - There are 3 scenarios
+        -> When state value is changed to new value --> Parent renders --> Child renders
+        -> When state value is changed to same value
+            --> Initial render --> Parent wont render --> Child wont render
+            --> After initial render --> Parent will render for safety --> Child wont render
